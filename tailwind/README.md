@@ -5,28 +5,32 @@
 
 ## Uso
 
-- Tailwind v4 sempre ultima versão
-- CDN (unpkg) em desenvolvimento e protótipo
-- Compilado no build em produção
+- Tailwind v4 sempre última versão
+- Uso: CDN (unpkg) em desenvolvimento e protótipo
+- Uso: compilado no build em produção
 
 ## Diagrama
 
 ```mermaid
 flowchart TB
-  subgraph DEV ["1. Development / Prototype — CDN unpkg"]
+  subgraph DEV ["1. Desenvolvimento / Protótipo — CDN unpkg"]
     direction LR
-    H[HTML with classes] --> B["@tailwindcss/browser"]
+    H[HTML com classes] --> B["@tailwindcss/browser"]
     S["style type=text/tailwindcss<br/>@theme"] --> B
-    B --> R[CSS generated at runtime<br/>injected into head]
+    B --> R[CSS gerado em runtime<br/>injetado no head]
   end
-  subgraph PROD ["2. Production — Build"]
+  subgraph PROD ["2. Produção — Build"]
     direction LR
-    F["@source files"] --> C[Vite, PostCSS or CLI]
+    F["@source arquivos"] --> C[Vite, PostCSS ou CLI]
     T["app.css<br/>@import + @theme"] --> C
-    C --> O[Minified static CSS]
+    C --> O[CSS estático minificado]
   end
   DEV --> PROD
 ```
+
+## Cenário
+
+Extrato com valor de crédito em verde e débito em vermelho, por token semântico.
 
 ## Chamada
 
@@ -55,14 +59,14 @@ flowchart TB
 
 1. `@tailwindcss/browser` lê as classes do DOM e gera o CSS no navegador
 2. `MutationObserver` regenera o CSS a cada classe nova
-3. `<style type="text/tailwindcss">` aceita `@theme`, `@utility`, `@variant` e `@apply`
+3. `<style type="text/tailwindcss">` aceita `@theme`, `@utility`, `@custom-variant`, `@variant` e `@apply`
 4. `@theme` cria os tokens: `--color-credit` vira `text-credit`, `bg-credit`, `border-credit`
 
 ## Caminhos de desenvolvimento
 
 | Caminho | Quando usar | Chamada |
 |---|---|---|
-| CDN unpkg | Desenvolvimento e protótipo | `<script src="https://unpkg.com/@tailwindcss/browser@latest">` |
+| CDN unpkg | Desenvolvimento e protótipo | `<script src="https://unpkg.com/@tailwindcss/browser@latest"></script>` |
 | Vite | Produção: Vite, Vue, React, Svelte | `npm i tailwindcss @tailwindcss/vite` |
 | Astro | Produção: Astro | `npx astro add tailwind` |
 | PostCSS | Produção: Next.js, webpack | `npm i tailwindcss @tailwindcss/postcss` |
@@ -71,11 +75,10 @@ flowchart TB
 ## Boas práticas
 
 - `@latest` segue a versão mais recente; para travar, use a versão exata (`@4.3.3`)
-- Use o CDN só em desenvolvimento: em produção, gere CSS estático no build
 - Declare tokens semânticos em `@theme` (`credit`, `debit`), não cores soltas (`#15803d`)
-- Escreva a classe inteira no código: `text-${cor}` não é detectado no build
+- Escreva a classe inteira no código: `text-${cor}` não é detectado no build; mapeie `{ credit: 'text-credit', debit: 'text-debit' }`
 - No build, use `@import "tailwindcss" source(none)` e `@source` para limitar a varredura
-- Feche o tema com `--*: initial` dentro de `@theme` para gerar só os tokens declarados
+- Feche só a paleta com `--color-*: initial` dentro de `@theme`; `--*: initial` zera spacing, fontes e breakpoints e exige redeclarar
 
 ## Trade-offs
 
@@ -83,3 +86,9 @@ flowchart TB
 |---|---|---|
 | CDN | Zero instalação, resultado imediato | JS no navegador, CSS em runtime, flash sem estilo |
 | Build | CSS mínimo, estático e cacheável | Exige toolchain; classe fora do `@source` não é gerada |
+
+## Relacionados
+
+- [Astro](../astro)
+- [Next.js](../nextjs)
+- [Shadcn](../shadcn)
