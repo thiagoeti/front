@@ -12,17 +12,20 @@
 ## Diagrama
 
 ```mermaid
-flowchart LR
-  subgraph CDN ["CDN unpkg — desenvolvimento e protótipo"]
-    H[HTML com classes] --> B["@tailwindcss/browser"]
+flowchart TB
+  subgraph DEV ["1. Development / Prototype — CDN unpkg"]
+    direction LR
+    H[HTML with classes] --> B["@tailwindcss/browser"]
     S["style type=text/tailwindcss<br/>@theme"] --> B
-    B --> R[CSS gerado em runtime<br/>e injetado no head]
+    B --> R[CSS generated at runtime<br/>injected into head]
   end
-  subgraph Build ["Build — produção"]
-    F[arquivos de @source] --> C[Vite, PostCSS ou CLI]
+  subgraph PROD ["2. Production — Build"]
+    direction LR
+    F["@source files"] --> C[Vite, PostCSS or CLI]
     T["app.css<br/>@import + @theme"] --> C
-    C --> O[CSS estático minificado]
+    C --> O[Minified static CSS]
   end
+  DEV --> PROD
 ```
 
 ## Chamada
