@@ -1,0 +1,17 @@
+{
+	"title": "Elysia",
+	"description": "Framework web TypeScript para Bun: rotas tipadas, validação com t e binário único em produção",
+	"tags": [
+		"elysia",
+		"bun",
+		"api",
+		"typescript"
+	],
+	"link": "https://elysiajs.com",
+	"docs": "https://elysiajs.com/at-glance.html",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"elysia"
+	],
+	"related": ["axios"]
+}
