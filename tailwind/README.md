@@ -1,8 +1,13 @@
 # Tailwind
 
-[Site](https://tailwindcss.com) · [Documentação](https://tailwindcss.com/docs) · [CDN no navegador](https://tailwindcss.com/docs/installation/play-cdn)
+[Tailwind](https://tailwindcss.com)
+[Tailwind - Docs](https://tailwindcss.com/docs)
 
-Tailwind v4 por CDN (unpkg) em desenvolvimento e protótipo; compilado no build em produção.
+## Uso
+
+- Tailwind v4 sempre ultima versão
+- CDN (unpkg) em desenvolvimento e protótipo
+- Compilado no build em produção
 
 ## Diagrama
 
