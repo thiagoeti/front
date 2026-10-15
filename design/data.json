@@ -1,0 +1,17 @@
+{
+	"title": "Design",
+	"description": "Referência de design para o front: tokens, tipografia, cor, layout, glifos, componentes e acessibilidade",
+	"tags": [
+		"design",
+		"front",
+		"tokens",
+		"layout",
+		"icons",
+		"a11y"
+	],
+	"link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+	"docs": "https://www.w3.org/WAI/WCAG22/quickref/",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [],
+	"related": ["tailwind", "shadcn", "astro"]
+}
