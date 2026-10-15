@@ -1,54 +1,59 @@
-# Elysia
+# Public
 
 - [Elysia](https://elysiajs.com)
 - [Elysia - Docs](https://elysiajs.com/at-glance.html)
+- [Astro](https://astro.build)
 
 ## Uso
 
-- Elysia sempre última versão, no Bun
-- Validação com `t`: tipo e runtime no mesmo schema
-- Binário único em produção
+- Elysia no Bun serve o build estático do Astro
+- `dist/` e `public/` servidos na raiz `/`
+- CORS liberado e `/health` para checagem
+- Container `oven/bun` configurado por `.env`
 
 ## Diagrama
 
 ```mermaid
 flowchart LR
-  B[Browser] --> E[Elysia on Bun]
-  E --> V["t schema<br/>validation"]
-  V --> H[Handler]
-  H --> J[JSON]
+  D[docker.sh] --> R[run.sh]
+  R --> I["install.sh<br/>first run"]
+  R --> A[astro build]
+  A --> DI["dist/"]
+  P["public/"] --> DI
+  DI --> E["app/index.ts<br/>Elysia"]
+  E --> B["Browser :PORT"]
 ```
 
-## Criar
+## Estrutura
 
-```sh
-bun create elysia app
-cd app && bun dev
-```
-
-## Código
-
-```ts
-// src/index.ts
-import { Elysia, t } from 'elysia';
-
-new Elysia()
-  .get('/quote', () => ({ rate: 5.42 }))
-  .post('/pix', ({ body }) => ({ ok: true, amount: body.amount }), {
-    body: t.Object({ amount: t.Number({ minimum: 0.01 }) }),
-  })
-  .listen(3000);
-```
-
-## Produção
-
-```sh
-bun build --compile --minify src/index.ts --outfile server
-./server
-```
-
-## Trade-offs
-
-| Vantagem | Desvantagem |
+| Arquivo | Função |
 |---|---|
-| Rápido, tipado de ponta a ponta | Feito para Bun; Node exige adapter |
+| `app/index.ts` | Servidor Elysia: CORS `*`, `/health`, `/` e estáticos de `dist/` e `public/` |
+| `install.sh` | `bun init` e dependências de Elysia e Astro |
+| `run.sh` | Instala se faltar, roda `astro build`, copia `public/` para `dist/` e sobe o servidor |
+| `docker.sh` | Lê `.env` e recria o container `GROUP_PROJECT` em `oven/bun:1.4.2-alpine` |
+
+## .env
+
+```sh
+GROUP=front
+PROJECT=public
+PORT=3000
+```
+
+## Executar
+
+```sh
+./docker.sh
+curl localhost:3000/health
+```
+
+Sem Docker: `sh run.sh`.
+
+## Rotas
+
+| Rota | Resposta |
+|---|---|
+| `GET /health` | `ok` |
+| `GET /` | `dist/index.html` |
+| `GET /*` | Arquivo de `dist/` ou `public/` |
