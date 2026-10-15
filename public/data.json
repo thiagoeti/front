@@ -1,17 +1,19 @@
 {
-	"title": "Elysia",
-	"description": "Framework web TypeScript para Bun: rotas tipadas, validação com t e binário único em produção",
+	"title": "Public",
+	"description": "Servidor Elysia no Bun que serve o build estático do Astro e a pasta public, em Docker",
 	"tags": [
 		"elysia",
 		"bun",
-		"api",
-		"typescript"
+		"astro",
+		"static",
+		"docker"
 	],
 	"link": "https://elysiajs.com",
 	"docs": "https://elysiajs.com/at-glance.html",
 	"repository": "https://github.com/thiagoeti/skills",
 	"skills": [
-		"elysia"
+		"elysia",
+		"astro"
 	],
-	"related": ["axios"]
+	"related": ["astro", "tailwind"]
 }
