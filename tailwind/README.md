@@ -38,9 +38,7 @@ flowchart LR
   </style>
 </head>
 <body class="font-sans p-6 text-ink">
-  <h1 class="text-2xl">Extrato</h1>
-  <p class="text-sm text-credit">+ R$ 1.200,00</p>
-  <p class="text-sm text-debit">− R$ 340,00</p>
+  ...
 </body>
 </html>
 ```
