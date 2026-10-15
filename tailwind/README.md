@@ -1,7 +1,7 @@
 # Tailwind
 
-[Tailwind](https://tailwindcss.com)
-[Tailwind - Docs](https://tailwindcss.com/docs)
+- [Tailwind](https://tailwindcss.com)
+- [Tailwind - Docs](https://tailwindcss.com/docs)
 
 ## Uso
 
