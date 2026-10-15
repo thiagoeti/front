@@ -28,10 +28,6 @@ flowchart TB
   DEV --> PROD
 ```
 
-## Cenário
-
-Extrato com valor de crédito em verde e débito em vermelho, por token semântico.
-
 ## Chamada
 
 ```html
