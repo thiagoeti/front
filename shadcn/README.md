@@ -7,8 +7,7 @@
 
 - shadcn sempre última versão (`shadcn@latest`)
 - Não é dependência: o CLI copia o código do componente para o projeto
-- Tailwind v4 obrigatório; tema por variáveis CSS
-- Funciona em Next.js, Vite, Astro, React Router e TanStack Start
+- Exige React + Tailwind
 
 ## Diagrama
 
@@ -27,7 +26,7 @@ flowchart LR
 npx shadcn@latest init -t vite
 ```
 
-Template: `next`, `vite`, `astro`, `react-router` ou `start`. Em projeto existente: `npx shadcn@latest init`.
+Template: `next`, `vite` ou `astro`. Em projeto existente: `npx shadcn@latest init`.
 
 ## Adicionar componente
 
@@ -43,28 +42,15 @@ import { Button } from "@/components/ui/button";
 
 ## Como funciona
 
-1. `init` cria `components.json`, `lib/utils.ts` (`cn`) e os tokens do tema no CSS
-2. `add` baixa o componente do registry e grava em `components/ui/`
-3. O componente é seu: edite variantes, estilo e comportamento direto no arquivo
-4. Variantes com `class-variance-authority`; classes mescladas por `cn` (`clsx` + `tailwind-merge`)
-
-## components.json
-
-| Campo | Define |
-|---|---|
-| `style` | Estilo visual dos componentes (`new-york`) |
-| `rsc` | `true` em Next.js: adiciona `"use client"` onde precisa |
-| `tailwind.css` | Arquivo CSS com os tokens do tema |
-| `tailwind.baseColor` | Paleta base: `neutral`, `zinc`, `slate`… |
-| `aliases` | Caminhos de `components`, `ui`, `lib`, `hooks` |
-| `iconLibrary` | Ícones usados pelos componentes (`lucide`) |
+1. `init` cria `components.json`, `lib/utils.ts` e os tokens do tema no CSS
+2. `add` copia o componente do registry para `components/ui/`
+3. O componente é seu: edite direto no arquivo
 
 ## Boas práticas
 
-- Adicione só o componente em uso; não copie a biblioteca inteira
+- Adicione só o componente em uso
 - Customize pelos tokens do tema (`--primary`, `--ring`) antes de editar o componente
-- Versione `components/ui/` como código seu: revise o diff ao rodar `add` de novo
-- Use `npx shadcn@latest add button --diff` para ver o que mudou no registry antes de sobrescrever
+- Rode `npx shadcn@latest add button --diff` antes de sobrescrever
 
 ## Trade-offs
 
