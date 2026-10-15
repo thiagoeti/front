@@ -1,0 +1,17 @@
+# Site for the Vite dist; the image entrypoint fills HOST and PORT from -e.
+server {
+  listen ${HOST}:${PORT} backlog=1024;
+  root /srv/site/dist;
+
+  # File names carry the content hash: cached for a year, never revalidated.
+  location /assets/ {
+    add_header Cache-Control "public, max-age=31536000, immutable";
+    try_files $uri =404;
+  }
+
+  # The entry HTML points at the current hashes: always revalidated.
+  location / {
+    add_header Cache-Control "no-cache";
+    try_files $uri /index.html;
+  }
+}
