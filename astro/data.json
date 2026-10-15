@@ -2,12 +2,9 @@
 	"title": "Astro",
 	"description": "Framework web server-first: HTML estático por padrão, servidor sob demanda e ilhas de JavaScript",
 	"tags": [
-		"front",
-		"ssr",
 		"astro",
-		"islands",
-		"server-islands",
-		"node",
+		"ssr",
+		"front",
 		"vite"
 	],
 	"link": "https://astro.build",

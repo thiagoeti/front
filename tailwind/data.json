@@ -2,9 +2,8 @@
 	"title": "Tailwind",
 	"description": "Framework CSS utility-first: CDN em protótipo, build em produção",
 	"tags": [
-		"front",
-		"css",
 		"tailwind",
+		"front",
 		"astro",
 		"cdn",
 		"unpkg",
