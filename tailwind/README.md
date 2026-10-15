@@ -28,7 +28,7 @@ flowchart LR
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://unpkg.com/@tailwindcss/browser@4.3.3"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
   <style type="text/tailwindcss">
     @theme {
       --color-ink: #0f172a;
@@ -56,14 +56,14 @@ flowchart LR
 
 | Caminho | Quando usar | Chamada |
 |---|---|---|
-| CDN unpkg | Estudo, protótipo, demo | `<script src="https://unpkg.com/@tailwindcss/browser@4.3.3">` |
+| CDN unpkg | Estudo, protótipo, demo | `<script src="https://unpkg.com/@tailwindcss/browser@latest">` |
 | Vite | React, Vue, Svelte, Astro com Vite | `npm i tailwindcss @tailwindcss/vite` |
 | PostCSS | Next.js, webpack | `npm i tailwindcss @tailwindcss/postcss` |
 | CLI | Site estático sem bundler | `npx @tailwindcss/cli -i app.css -o dist/app.css --minify` |
 
 ## Boas práticas
 
-- Fixe a versão exata na URL do CDN: `@4.3.3`, nunca `@4` ou sem versão
+- `@latest` segue a versão mais recente; para travar, use a versão exata (`@4.3.3`)
 - Use o CDN só em desenvolvimento: em produção, gere CSS estático no build
 - Declare tokens semânticos em `@theme` (`credit`, `debit`), não cores soltas (`#15803d`)
 - Escreva a classe inteira no código: `text-${cor}` não é detectado no build
