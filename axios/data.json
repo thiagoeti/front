@@ -1,0 +1,22 @@
+{
+	"title": "Axios",
+	"description": "Cliente HTTP para navegador e Node: CDN em protótipo, npm em produção, instância com interceptors",
+	"tags": [
+		"front",
+		"http",
+		"axios",
+		"api",
+		"cdn",
+		"unpkg",
+		"node"
+	],
+	"link": "https://axios-http.com",
+	"docs": "https://axios-http.com/docs/intro",
+	"cdn": "https://unpkg.com/axios@latest/dist/axios.min.js",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"front-axios",
+		"front-cdn"
+	],
+	"related": ["nextjs", "astro"]
+}
