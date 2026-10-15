@@ -1,13 +1,12 @@
 # Axios
 
-- [Axios](https://axios-http.com)
-- [Axios - Docs](https://axios-http.com/docs/intro)
+- [Axios](https://axios.rest)
+- [Axios - Docs](https://axios.rest/docs)
 
 ## Uso
 
 - Axios sempre última versão
 - CDN (unpkg) em desenvolvimento e protótipo
-- npm + bundler em produção
 - Uma instância por API, com interceptors e timeout
 
 ## Diagrama
@@ -48,7 +47,6 @@ flowchart TB
   <p id="quote">...</p>
   <script>
     const api = axios.create({ baseURL: 'https://economia.awesomeapi.com.br/json', timeout: 5000 });
-
     api.get('/last/USD-BRL').then(({ data }) => {
       document.querySelector('#quote').textContent = `USD 1,00 = R$ ${data.USDBRL.bid}`;
     });
