@@ -2,13 +2,13 @@
 
 [Site](https://tailwindcss.com) · [Documentação](https://tailwindcss.com/docs) · [CDN no navegador](https://tailwindcss.com/docs/installation/play-cdn)
 
-Tailwind v4 carregado por CDN (unpkg) para estudo e protótipo, e o caminho de build para produção.
+Tailwind v4 por CDN (unpkg) em desenvolvimento e protótipo; compilado no build em produção.
 
 ## Diagrama
 
 ```mermaid
 flowchart LR
-  subgraph CDN ["CDN unpkg — protótipo"]
+  subgraph CDN ["CDN unpkg — desenvolvimento e protótipo"]
     H[HTML com classes] --> B["@tailwindcss/browser"]
     S["style type=text/tailwindcss<br/>@theme"] --> B
     B --> R[CSS gerado em runtime<br/>e injetado no head]
@@ -28,7 +28,7 @@ flowchart LR
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://unpkg.com/@tailwindcss/browser@4.3.3"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
   <style type="text/tailwindcss">
     @theme {
       --color-ink: #0f172a;
@@ -38,9 +38,7 @@ flowchart LR
   </style>
 </head>
 <body class="font-sans p-6 text-ink">
-  <h1 class="text-2xl">Extrato</h1>
-  <p class="text-sm text-credit">+ R$ 1.200,00</p>
-  <p class="text-sm text-debit">− R$ 340,00</p>
+  ...
 </body>
 </html>
 ```
@@ -56,14 +54,15 @@ flowchart LR
 
 | Caminho | Quando usar | Chamada |
 |---|---|---|
-| CDN unpkg | Estudo, protótipo, demo | `<script src="https://unpkg.com/@tailwindcss/browser@4.3.3">` |
-| Vite | React, Vue, Svelte, Astro com Vite | `npm i tailwindcss @tailwindcss/vite` |
-| PostCSS | Next.js, webpack | `npm i tailwindcss @tailwindcss/postcss` |
-| CLI | Site estático sem bundler | `npx @tailwindcss/cli -i app.css -o dist/app.css --minify` |
+| CDN unpkg | Desenvolvimento e protótipo | `<script src="https://unpkg.com/@tailwindcss/browser@latest">` |
+| Vite | Produção: Vite, Vue, React, Svelte | `npm i tailwindcss @tailwindcss/vite` |
+| Astro | Produção: Astro | `npx astro add tailwind` |
+| PostCSS | Produção: Next.js, webpack | `npm i tailwindcss @tailwindcss/postcss` |
+| CLI | Produção: NestJS com views, site estático sem bundler | `npx @tailwindcss/cli -i app.css -o dist/app.css --minify` |
 
 ## Boas práticas
 
-- Fixe a versão exata na URL do CDN: `@4.3.3`, nunca `@4` ou sem versão
+- `@latest` segue a versão mais recente; para travar, use a versão exata (`@4.3.3`)
 - Use o CDN só em desenvolvimento: em produção, gere CSS estático no build
 - Declare tokens semânticos em `@theme` (`credit`, `debit`), não cores soltas (`#15803d`)
 - Escreva a classe inteira no código: `text-${cor}` não é detectado no build
