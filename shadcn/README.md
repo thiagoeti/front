@@ -1,46 +1,74 @@
-# Shadcn
+# shadcn/ui
 
-Componente shadcn em Vite + React + Tailwind, com build de produção ajustado e servido como estático. Use como base de configuração de um projeto shadcn.
+- [shadcn/ui](https://ui.shadcn.com)
+- [shadcn/ui - Docs](https://ui.shadcn.com/docs)
+
+## Uso
+
+- shadcn sempre última versão (`shadcn@latest`)
+- Não é dependência: o CLI copia o código do componente para o projeto
+- Tailwind v4 obrigatório; tema por variáveis CSS
+- Funciona em Next.js, Vite, Astro, React Router e TanStack Start
 
 ## Diagrama
 
 ```mermaid
 flowchart LR
-  J[components.json] --> B[src/components/ui/button.tsx]
-  B --> V[Vite build]
-  T[index.css: tokens do tema] --> V
-  V --> D[(volume shadcn-build: dist)]
-  D --> N[nginx :4173]
+  R[shadcn registry] -->|"npx shadcn add button"| C[shadcn CLI]
+  J["components.json<br/>style + aliases"] --> C
+  C --> F["components/ui/button.tsx<br/>your code"]
+  T["index.css<br/>theme tokens"] --> A[Your app]
+  F --> A
 ```
 
-## Cenário
+## Criar
 
-Botão de confirmação de PIX com o tema do shadcn.
+```sh
+npx shadcn@latest init -t vite
+```
+
+Template: `next`, `vite`, `astro`, `react-router` ou `start`. Em projeto existente: `npx shadcn@latest init`.
+
+## Adicionar componente
+
+```sh
+npx shadcn@latest add button
+```
+
+```tsx
+import { Button } from "@/components/ui/button";
+
+<Button>Confirmar PIX de R$ 1.250,00</Button>
+```
 
 ## Como funciona
 
-1. `components.json`: estilo, aliases e CSS do tema que o CLI do shadcn usa; `button.tsx` copiado do shadcn e reduzido às variantes em uso
-2. `index.css`: só os tokens que o componente usa, `source("./")` restrito a `src`
-3. `vite.config.ts`: Tailwind como plugin, `build.target` fixo, JS e CSS minificados, sem sourcemap e sem polyfill de preload
-4. Build: skeleton de `bun create vite` com os arquivos do project por cima, código só leitura e `dist` no volume `shadcn-build`
-5. Servidor: Vite não tem servidor de produção; nginx serve o `dist` só leitura, `/assets/` imutável por um ano, HTML com `no-cache`, gzip e host e porta por `-e`
-6. Limites de memória, CPU e pids, build sem root, sistema de arquivos só leitura e healthcheck
+1. `init` cria `components.json`, `lib/utils.ts` (`cn`) e os tokens do tema no CSS
+2. `add` baixa o componente do registry e grava em `components/ui/`
+3. O componente é seu: edite variantes, estilo e comportamento direto no arquivo
+4. Variantes com `class-variance-authority`; classes mescladas por `cn` (`clsx` + `tailwind-merge`)
 
-## Executar
+## components.json
 
-```sh
-./docker.sh
-until curl -sf localhost:4173 >/dev/null; do sleep 1; done
-curl -si localhost:4173
-curl -sI "localhost:4173$(curl -s localhost:4173 | grep -o '/assets/[^"]*\.js')"
-docker rm -f shadcn && docker volume rm shadcn-build
-```
+| Campo | Define |
+|---|---|
+| `style` | Estilo visual dos componentes (`new-york`) |
+| `rsc` | `true` em Next.js: adiciona `"use client"` onde precisa |
+| `tailwind.css` | Arquivo CSS com os tokens do tema |
+| `tailwind.baseColor` | Paleta base: `neutral`, `zinc`, `slate`… |
+| `aliases` | Caminhos de `components`, `ui`, `lib`, `hooks` |
+| `iconLibrary` | Ícones usados pelos componentes (`lucide`) |
 
-Saída: o HTML com `cache-control: no-cache` e o asset JS com `cache-control: public, max-age=31536000, immutable`.
+## Boas práticas
+
+- Adicione só o componente em uso; não copie a biblioteca inteira
+- Customize pelos tokens do tema (`--primary`, `--ring`) antes de editar o componente
+- Versione `components/ui/` como código seu: revise o diff ao rodar `add` de novo
+- Use `npx shadcn@latest add button --diff` para ver o que mudou no registry antes de sobrescrever
 
 ## Trade-offs
 
 | Vantagem | Desvantagem |
 |---|---|
-| Código do componente no projeto, sem dependência de UI | Atualização do shadcn é manual |
-| CSS só com os tokens usados; assets com hash em cache imutável | Componente novo exige novos tokens |
+| Código no projeto, sem dependência de UI | Atualização é manual, componente a componente |
+| Total controle de estilo e comportamento | Exige React + Tailwind; sem CDN |
