@@ -1,0 +1,16 @@
+{
+	"title": "UI/UX",
+	"description": "Leis de UX aplicadas ao front: Gestalt, decisão, memória e comportamento, com base em lawsofux.com",
+	"tags": [
+		"ui-ux",
+		"ux",
+		"ui",
+		"design",
+		"gestalt",
+		"front"
+	],
+	"link": "https://lawsofux.com",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [],
+	"related": ["design", "shadcn", "tailwind"]
+}
