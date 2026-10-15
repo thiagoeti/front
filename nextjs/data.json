@@ -1,0 +1,21 @@
+{
+	"title": "Next.js",
+	"description": "Framework React full-stack: Server Component, Client Component e Route Handler no App Router",
+	"tags": [
+		"front",
+		"ssr",
+		"nextjs",
+		"react",
+		"app-router",
+		"server-components",
+		"node"
+	],
+	"link": "https://nextjs.org",
+	"docs": "https://nextjs.org/docs",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"front-nextjs",
+		"front-tailwind"
+	],
+	"related": ["tailwind", "shadcn"]
+}

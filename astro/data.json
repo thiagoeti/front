@@ -1,0 +1,22 @@
+{
+	"title": "Astro",
+	"description": "Framework web server-first: HTML estático por padrão, servidor sob demanda e ilhas de JavaScript",
+	"tags": [
+		"front",
+		"ssr",
+		"astro",
+		"islands",
+		"server-islands",
+		"node",
+		"vite"
+	],
+	"link": "https://astro.build",
+	"docs": "https://docs.astro.build",
+	"mcp": "https://mcp.docs.astro.build/mcp",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"astro",
+		"front-tailwind"
+	],
+	"related": ["tailwind", "shadcn"]
+}

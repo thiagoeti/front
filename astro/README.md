@@ -1,10 +1,15 @@
 # Astro
 
-[Astro](https://astro.build)
-[Astro - Docs](https://docs.astro.build)
-[Astro - MCP](https://mcp.docs.astro.build)
+- [Astro](https://astro.build)
+- [Astro - Docs](https://docs.astro.build)
+- [Astro - MCP](https://mcp.docs.astro.build)
 
-Astro SSR ajustado para produção no Bun: servidor standalone, HTML minificado, sem JavaScript no cliente. Use como base de configuração de um Astro que renderiza a cada requisição.
+## Uso
+
+- Astro sempre última versão
+- Estático por padrão; servidor só na página que muda a cada requisição
+- Adapter Node standalone em produção
+- Zero JavaScript no cliente; ilha só no componente interativo
 
 ## MCP
 
@@ -18,39 +23,88 @@ claude mcp add --transport http --scope local astro-docs https://mcp.docs.astro.
 ## Diagrama
 
 ```mermaid
-sequenceDiagram
-  participant B as Navegador
-  participant A as Astro SSR (Bun)
-  B->>A: GET /
-  A-->>B: HTML minificado, cache-control no-store
+flowchart TB
+  subgraph DEV ["1. Development — astro dev"]
+    direction LR
+    P[".astro pages"] --> V[Vite dev server<br/>HMR]
+    V --> B1[Browser]
+  end
+  subgraph PROD ["2. Production — astro build + Node adapter"]
+    direction LR
+    S["Static pages<br/>(default)"] --> H[HTML at build time]
+    D["prerender = false"] --> N[Node server]
+    N --> R[HTML per request<br/>zero JS]
+    I["client:* island"] --> J[JS only for that component]
+  end
+  DEV --> PROD
 ```
 
-## Cenário
+## Criar
 
-Saldo da conta renderizado a cada acesso, fora de qualquer cache compartilhado.
+```sh
+npm create astro@latest
+npx astro add node
+```
+
+## Página no servidor
+
+```astro
+---
+// src/pages/saldo.astro: renderiza a cada requisição
+import { balanceGet } from '../lib/balance';
+
+export const prerender = false;
+
+const balance = await balanceGet(Astro.cookies.get('session')?.value);
+Astro.response.headers.set('cache-control', 'no-store, private');
+---
+<p>Saldo: {balance}</p>
+```
+
+```js
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import node from '@astrojs/node';
+
+export default defineConfig({
+  adapter: node({ mode: 'standalone' }),
+});
+```
 
 ## Como funciona
 
-1. `astro.config.mjs`: `output: 'server'` com `@astrojs/node` standalone
-2. `compressHTML`, CSS inline, sem origem de imagem remota, sem prefetch, `security.checkOrigin`, dev toolbar desligado, `vite.build` com alvo fixo, minificação e sem sourcemap
-3. `bun --smol` sobe o build com heap menor
-4. `docker.sh`: skeleton de `bun create astro` com config e `src` por cima, install, build e start no `docker run`; código montado só leitura e build num volume anônimo
-5. Limites de memória, CPU e pids, usuário sem root, sistema de arquivos só leitura, telemetria desligada e healthcheck
+1. O frontmatter (`---`) roda só no servidor: acessa banco, cookie e segredo sem expor nada ao navegador
+2. Sem `prerender = false`, a página vira HTML estático no build
+3. Com `prerender = false`, o adapter Node renderiza a página a cada requisição
+4. Componente com `client:*` vira ilha: só ele envia JavaScript
 
-## Executar
+## Modos de renderização
+
+| Modo | Diretiva | Renderiza | Exemplo |
+|---|---|---|---|
+| Estático | padrão | No build | Blog, docs, institucional |
+| Sob demanda | `export const prerender = false` | A cada requisição | Saldo, área logada |
+| Server island | `server:defer` | Depois do HTML, no servidor | Avatar, carrinho |
+| Ilha cliente | `client:load`, `client:idle`, `client:visible` | No navegador | Formulário, carrossel |
+
+## Produção
 
 ```sh
-./docker.sh
-until curl -sf localhost:4321 >/dev/null; do sleep 1; done
-curl -si localhost:4321
-docker rm -fv astro
+npm run build
+HOST=0.0.0.0 PORT=4321 node ./dist/server/entry.mjs
 ```
 
-Saída: `200` com `cache-control: no-store, private` e o HTML minificado com o saldo de R$ 13.858,82.
+## Boas práticas
+
+- Comece estático; marque `prerender = false` só na página que precisa de dado por requisição
+- Prefira `server:defer` a página inteira sob demanda quando só um trecho é dinâmico
+- Use `client:visible` ou `client:idle` antes de `client:load`
+- Envie `cache-control: no-store, private` em página com dado do usuário
+- Estilize com Tailwind: `npx astro add tailwind`
 
 ## Trade-offs
 
 | Vantagem | Desvantagem |
 |---|---|
-| HTML pronto e minificado, sem JavaScript no cliente | Cada acesso renderiza no servidor |
-| `--smol` reduz memória no container | GC mais frequente sob carga |
+| HTML pronto, sem JavaScript no cliente | Interação exige ilha explícita |
+| Estático e servidor no mesmo projeto | Página sob demanda exige servidor Node rodando |
