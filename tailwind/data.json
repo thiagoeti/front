@@ -1,0 +1,17 @@
+{
+	"title": "Tailwind",
+	"tags": [
+		"front",
+		"tailwind",
+		"astro",
+		"cdn",
+		"unpkg"
+	],
+	"link": "https://tailwindcss.com",
+	"docs": "https://tailwindcss.com/docs",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"front-tailwind",
+		"astro"
+	]
+}
