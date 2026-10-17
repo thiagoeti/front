@@ -1,31 +1,93 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+### general
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# env
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
-/.phpunit.cache
+**/.env
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+.env*
+**/.env*
+
+!**/.env.example
+
+### data
+
+data
+**/data
+!src/lib/data
+
+storage
+**/storage
+
+### tmp
+
+tmp
+**/tmp
+
+### logs
+
+*.log
+**/*.log
+
+logs
+**/logs
+
+### libraries
+
+node_modules
+**/node_modules
+
+# package.json # reinstall
+# **/package.json # reinstall
+
+vendor
+**/vendor
+
+### build
+
+# runtime
+
+bun.lock
+**/bun.lock
+
+runtime
+**/runtime
+
+# build
+
+dist
+**/dist
+
+build
+**/build
+
+.astro
+**/.astro
+
+### front
+
+# next
+
+.next
+**/.next
+
+out
+**/out
+
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+
+### tests
+
+.playwright-mcp
+**/.playwright-mcp
+
+### others
+
+Thumbs.db
+.DS_Store
+*.pem
+
+###
