@@ -8,7 +8,7 @@ PWD="$(cd "$(dirname "$0")" && pwd)"
 # -- ----- ----- -----
 
 # env
-[ -f "$PWD/.env" ] || { echo "error: .env notfound"; exit 1; }
+[ -f "$PWD/.env" ] || { echo "error: .env not found"; exit 1; }
 . "$PWD/.env"
 
 # test

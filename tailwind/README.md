@@ -5,7 +5,7 @@
 
 ## Uso
 
-- Tailwind v4 sempre última versão
+- Tailwind v4 sempre na última versão
 - Uso: CDN (unpkg) em desenvolvimento e protótipo
 - Uso: compilado no build em produção
 

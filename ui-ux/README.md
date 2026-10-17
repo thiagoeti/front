@@ -28,7 +28,7 @@
 | [Tesler's Law](https://lawsofux.com/teslers-law) | Toda tarefa tem complexidade que não some | O sistema absorve a complexidade, não o usuário |
 | [Occam's Razor](https://lawsofux.com/occams-razor) | Prefira a solução com menos suposições | Corte elemento até que nada sobre |
 | [Pareto Principle](https://lawsofux.com/pareto-principle) | 80% do efeito vem de 20% das causas | Priorize os fluxos mais usados |
-| [Doherty Threshold](https://lawsofux.com/doherty-threshold) | Produtividade sobe com resposta < 400 ms | Feedback imediato; skeleton e otimista |
+| [Doherty Threshold](https://lawsofux.com/doherty-threshold) | Produtividade sobe com resposta < 400 ms | Feedback imediato; skeleton e UI otimista |
 
 ## Memória e atenção
 

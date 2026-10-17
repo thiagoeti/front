@@ -5,7 +5,7 @@
 
 ## Uso
 
-- shadcn sempre última versão (`shadcn@latest`)
+- shadcn sempre na última versão (`shadcn@latest`)
 - Não é dependência: o CLI copia o código do componente para o projeto
 - Exige React + Tailwind
 

@@ -5,7 +5,7 @@
 
 ## Uso
 
-- Next.js sempre última versão, App Router
+- Next.js sempre na última versão, App Router
 - Server Component por padrão; `"use client"` só no componente interativo
 - Route Handler para dado sob demanda
 

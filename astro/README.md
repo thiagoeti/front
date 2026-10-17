@@ -6,7 +6,7 @@
 
 ## Uso
 
-- Astro sempre última versão
+- Astro sempre na última versão
 - Estático por padrão; servidor só na página que muda a cada requisição
 - Adapter Node standalone em produção
 - Zero JavaScript no cliente; ilha só no componente interativo

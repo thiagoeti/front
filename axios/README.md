@@ -5,7 +5,7 @@
 
 ## Uso
 
-- Axios sempre última versão
+- Axios sempre na última versão
 - CDN (unpkg) em desenvolvimento e protótipo
 - Uma instância por API, com interceptors e timeout
 
