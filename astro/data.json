@@ -10,7 +10,8 @@
 	"link": "https://astro.build",
 	"docs": "https://docs.astro.build",
 	"mcp": "https://mcp.docs.astro.build/mcp",
-	"repository": "https://github.com/thiagoeti/skills",
+	"github": "https://github.com/thiagoeti/skills",
+	"repository": "https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
 	"skills": [
 		"astro",
 		"front-tailwind"
