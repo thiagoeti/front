@@ -14,7 +14,7 @@
 	"repository": "https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
 	"skills": [
 		"astro",
-		"front-tailwind"
+		"tailwind"
 	],
-	"related": ["tailwind", "shadcn"]
+	"related": ["tailwind"]
 }
