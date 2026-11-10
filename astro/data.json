@@ -10,11 +10,12 @@
 	"link": "https://astro.build",
 	"docs": "https://docs.astro.build",
 	"mcp": "https://mcp.docs.astro.build/mcp",
-	"github": "https://github.com/thiagoeti/skills",
-	"repository": "https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
+	"github": "https://github.com/thiagoeti",
+	"repository": "https://github.com/thiagoeti/skills",
 	"skills": [
-		"astro",
-		"tailwind"
+		"https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/astro-structure/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-landing-page/SKILL.md"
 	],
 	"related": ["tailwind"]
 }
