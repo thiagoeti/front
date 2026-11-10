@@ -1,0 +1,20 @@
+{
+	"title": "Tailwind",
+	"description": "Framework CSS utility-first: CDN em protótipo, build em produção",
+	"tags": [
+		"tailwind",
+		"front",
+		"cdn",
+		"unpkg",
+		"vite",
+		"postcss"
+	],
+	"link": "https://tailwindcss.com",
+	"docs": "https://tailwindcss.com/docs",
+	"github": "https://github.com/thiagoeti",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md"
+	],
+	"related": ["astro"]
+}
