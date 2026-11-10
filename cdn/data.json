@@ -1,0 +1,17 @@
+{
+	"title": "CDN",
+	"description": "CDN front usando unpkg: versão exata, defer e preconnect; próprio host só quando a regra exigir",
+	"tags": [
+		"cdn",
+		"front",
+		"unpkg"
+	],
+	"link": "https://unpkg.com",
+	"docs": "https://unpkg.com",
+	"github": "https://github.com/thiagoeti",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md"
+	],
+	"related": ["tailwind", "astro"]
+}
