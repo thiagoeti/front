@@ -6,8 +6,12 @@ CDN front usando unpkg
 
 - [unpkg](https://unpkg.com)
 
-## Skill
+## Projeto
 
-[@thiagoeti](https://github.com/thiagoeti)
-[@thiagoeti - Skills](https://github.com/thiagoeti/skills)
-[@thiagoeti - Skills - Front CDN](https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md)
+- [Github](https://github.com/thiagoeti)
+- [CDN](https://github.com/thiagoeti/front/tree/main/cdn)
+
+## Skills
+
+- [Skills](https://github.com/thiagoeti/skills)
+- [front-cdn](https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md)
