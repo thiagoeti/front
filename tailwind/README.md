@@ -1,5 +1,7 @@
 # Tailwind
 
+Framework CSS utility-first
+
 - [Tailwind](https://tailwindcss.com)
 - [Tailwind - Docs](https://tailwindcss.com/docs)
 

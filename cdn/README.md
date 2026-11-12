@@ -1,6 +1,6 @@
 # CDN
 
-CDN front usando unpkg: versão exata, defer e preconnect; próprio host só quando a regra exigir
+CDN front usando unpkg
 
 # unpkg
 

@@ -7,15 +7,16 @@
 		"front",
 		"vite"
 	],
-	"link": "https://astro.build",
+	"framework": "https://astro.build",
 	"docs": "https://docs.astro.build",
 	"mcp": "https://mcp.docs.astro.build/mcp",
 	"github": "https://github.com/thiagoeti",
-	"repository": "https://github.com/thiagoeti/skills",
+	"project": "https://github.com/thiagoeti/front/tree/main/astro",
 	"skills": [
+		"https://github.com/thiagoeti/skills",
 		"https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
 		"https://github.com/thiagoeti/skills/blob/main/skills/astro-structure/SKILL.md",
 		"https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-landing-page/SKILL.md"
 	],
-	"related": ["tailwind"]
+	"related": ["axios", "tailwind"]
 }
