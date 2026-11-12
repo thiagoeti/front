@@ -1,0 +1,18 @@
+{
+	"title": "Glyph Icon",
+	"description": "Glifos e ícones em SVG: o glifo ilustra o conceito, o ícone é reconhecido em um olhar",
+	"tags": [
+		"glyph",
+		"icon",
+		"svg",
+		"front"
+	],
+	"github": "https://github.com/thiagoeti",
+	"project": "https://github.com/thiagoeti/front/tree/main/glyph-icon",
+	"skills": [
+		"https://github.com/thiagoeti/skills",
+		"https://github.com/thiagoeti/skills/blob/main/skills/glyph/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/icon/SKILL.md"
+	],
+	"related": ["astro", "tailwind"]
+}

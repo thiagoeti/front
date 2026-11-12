@@ -27,3 +27,4 @@ claude mcp add --transport http --scope local astro-docs https://mcp.docs.astro.
 - [Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
 - [Astro - Structure](https://github.com/thiagoeti/skills/blob/main/skills/astro-structure/SKILL.md)
 - [Astro - Landing Page](https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-landing-page/SKILL.md)
+- [Astro - Sitemap](https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-sitemap/SKILL.md)

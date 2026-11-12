@@ -1,0 +1,27 @@
+{
+	"title": "Web",
+	"description": "Fundamentos de toda página web: HTML semântico, metadados, Open Graph, robots.txt, sitemap.xml e llms.txt para buscadores e IA",
+	"tags": [
+		"web",
+		"front",
+		"html",
+		"semantic",
+		"metadata",
+		"open-graph",
+		"robots-txt",
+		"sitemap-xml",
+		"llms-txt"
+	],
+	"github": "https://github.com/thiagoeti",
+	"project": "https://github.com/thiagoeti/front/tree/main/web",
+	"skills": [
+		"https://github.com/thiagoeti/skills",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-html-semantic/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-metadata/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-robots-txt/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-sitemap-xml/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-llms-txt/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/web-social-share/SKILL.md"
+	],
+	"related": ["axios", "astro", "tailwind", "glyph-icon"]
+}
