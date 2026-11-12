@@ -1,0 +1,19 @@
+{
+	"title": "axios",
+	"description": "Cliente HTTP para navegador",
+	"tags": [
+		"axios",
+		"front",
+		"api",
+		"cdn",
+		"unpkg"
+	],
+	"link": "https://axios.rest",
+	"docs": "https://axios.rest/pages/misc/security.html",
+	"github": "https://github.com/thiagoeti",
+	"repository": "https://github.com/thiagoeti/skills",
+	"skills": [
+		"https://github.com/thiagoeti/skills/blob/main/skills/axios/SKILL.md"
+	],
+	"related": ["astro", "cdn"]
+}
