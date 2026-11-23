@@ -1,0 +1,23 @@
+{
+	"title": "shadcn/ui",
+	"description": "Biblioteca de componentes React distribuída como código: o CLI copia o componente para o projeto",
+	"tags": [
+		"front",
+		"ui",
+		"components",
+		"shadcn",
+		"react",
+		"tailwind",
+		"radix"
+	],
+	"framework": "https://ui.shadcn.com",
+	"docs": "https://ui.shadcn.com/docs",
+	"mcp": "https://ui.shadcn.com/docs/mcp",
+	"github": "https://github.com/thiagoeti",
+	"project": "https://github.com/thiagoeti/front/tree/main/shadcn",
+	"skills": [
+		"https://github.com/thiagoeti/skills",
+		"https://github.com/thiagoeti/skills/blob/main/skills/shadcn/SKILL.md"
+	],
+	"related": ["tailwind", "nextjs", "astro"]
+}
