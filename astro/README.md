@@ -1,4 +1,3 @@
-
 # Astro
 
 Framework web server-first: HTML estático por padrão, servidor sob demanda e ilhas de JavaScript
@@ -26,5 +25,5 @@ claude mcp add --transport http --scope local astro-docs https://mcp.docs.astro.
 - [Skills](https://github.com/thiagoeti/skills)
 - [Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
 - [Astro - Structure](https://github.com/thiagoeti/skills/blob/main/skills/astro-structure/SKILL.md)
-- [Astro - Landing Page](https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-landing-page/SKILL.md)
-- [Astro - Sitemap](https://github.com/thiagoeti/skills/blob/main/skills/_final/.claude/skills/astro-sitemap/SKILL.md)
+- [Astro - Landing Page](https://github.com/thiagoeti/skills/blob/main/skills/astro-landing-page/SKILL.md)
+- [Astro - Sitemap](https://github.com/thiagoeti/skills/blob/main/skills/astro-sitemap/SKILL.md)
