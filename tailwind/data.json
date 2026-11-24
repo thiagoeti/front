@@ -18,5 +18,5 @@
 		"https://github.com/thiagoeti/skills",
 		"https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md"
 	],
-	"related": ["astro", "cdn"]
+	"related": ["cdn", "astro", "nextjs", "ui-ux"]
 }

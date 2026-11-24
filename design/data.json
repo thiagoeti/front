@@ -1,0 +1,18 @@
+{
+    "title": "Design",
+    "description": "Referência de design para o front: tokens, tipografia, cor, layout, glifos, componentes e acessibilidade",
+    "tags": [
+        "front",
+        "design"
+    ],
+    "github": "https://github.com/thiagoeti",
+    "project": "https://github.com/thiagoeti/front/tree/main/design",
+    "skills": [
+        "https://github.com/thiagoeti/skills",
+        "https://github.com/thiagoeti/skills/blob/main/skills/creative/SKILL.md",
+        "https://github.com/thiagoeti/skills/blob/main/skills/frontend-design/SKILL.md",
+        "https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md",
+        "https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md"
+    ],
+    "related": ["ui-ux", "tailwind", "astro"]
+}
