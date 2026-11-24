@@ -23,4 +23,6 @@ claude mcp add --scope local shadcn -- npx shadcn@latest mcp
 ## Skills
 
 - [Skills](https://github.com/thiagoeti/skills)
-- [shadcn](https://github.com/thiagoeti/skills/blob/main/skills/shadcn/SKILL.md)
+- [Tailwind](https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md)
+- [Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
+- [Next.js](https://github.com/thiagoeti/skills/blob/main/skills/nextjs/SKILL.md)
