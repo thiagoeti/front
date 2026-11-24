@@ -3,12 +3,14 @@
 	"description": "Biblioteca de componentes React distribuída como código: o CLI copia o componente para o projeto",
 	"tags": [
 		"front",
-		"ui",
-		"components",
+		"design",
+		"ui-ux",
+		"glyph",
+		"icon",
+		"nextjs",
+		"astro",
 		"shadcn",
-		"react",
-		"tailwind",
-		"radix"
+		"tailwind"
 	],
 	"framework": "https://ui.shadcn.com",
 	"docs": "https://ui.shadcn.com/docs",
@@ -17,7 +19,12 @@
 	"project": "https://github.com/thiagoeti/front/tree/main/shadcn",
 	"skills": [
 		"https://github.com/thiagoeti/skills",
-		"https://github.com/thiagoeti/skills/blob/main/skills/shadcn/SKILL.md"
+		"https://github.com/thiagoeti/skills/blob/main/skills/creative/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-tailwind/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-ui-ux/SKILL.md"
 	],
-	"related": ["tailwind", "nextjs", "astro"]
+	"related": ["design", "ui-ux", "nextjs", "astro", "tailwind"]
 }

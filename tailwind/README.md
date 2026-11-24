@@ -16,5 +16,5 @@ Framework CSS utility-first: CDN em protótipo, build em produção
 ## Skill
 
 [@thiagoeti](https://github.com/thiagoeti)
-[@thiagoeti - Skills](https://github.com/thiagoeti/skills)
-[@thiagoeti - Skills - Tailwind](https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md)
+[Github](https://github.com/thiagoeti/skills)
+[Tailwind](https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md)

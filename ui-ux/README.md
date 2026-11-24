@@ -7,6 +7,18 @@
 - Leis de UX aplicadas ao front
 - Consulte antes de desenhar tela, fluxo ou componente
 
+## Projeto
+
+- [@thiagoeti](https://github.com/thiagoeti)
+- [UI/UX](https://github.com/thiagoeti/front/tree/main/ui-ux)
+
+## Skills
+
+- [Github](https://github.com/thiagoeti/skills)
+- [Design - Icon](https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md)
+- [Design - Glyph](https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md)
+- [Design - UI/UX](https://github.com/thiagoeti/skills/blob/main/skills/design-ui-ux/SKILL.md)
+
 ## Gestalt
 
 | Glifo | Lei | Resumo | No front |

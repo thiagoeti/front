@@ -4,7 +4,6 @@
 	"tags": [
 		"front",
 		"axios",
-		"astro",
 		"api",
 		"cdn",
 		"unpkg"
@@ -15,7 +14,8 @@
 	"project": "https://github.com/thiagoeti/front/tree/main/axios",
 	"skills": [
 		"https://github.com/thiagoeti/skills",
-		"https://github.com/thiagoeti/skills/blob/main/skills/axios/SKILL.md"
+		"https://github.com/thiagoeti/skills/blob/main/skills/axios/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md"
 	],
 	"related": ["astro", "cdn"]
 }

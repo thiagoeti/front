@@ -12,8 +12,9 @@
 	"docs": "https://elysiajs.com/at-glance.html",
 	"repository": "https://github.com/thiagoeti/skills",
 	"skills": [
-		"elysia",
-		"astro"
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/nextjs/SKILL.md"
 	],
-	"related": ["astro", "tailwind"]
+	"related": ["cdn", "astro", "nextjs"]
 }
