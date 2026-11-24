@@ -1,22 +1,26 @@
 {
-    "title": "Next.js",
-    "description": "Framework React full-stack: Server Component, Client Component e Route Handler no App Router",
-    "tags": [
-        "nextjs",
-        "react",
-        "ssr",
-        "app-router",
-        "server-components",
-        "front"
-    ],
-    "framework": "https://nextjs.org",
-    "docs": "https://nextjs.org/docs",
-    "mcp": "https://nextjs.org/docs/app/guides/mcp",
-    "github": "https://github.com/thiagoeti",
-    "project": "https://github.com/thiagoeti/front/tree/main/nextjs",
-    "skills": [
-        "https://github.com/thiagoeti/skills",
-        "https://github.com/thiagoeti/skills/blob/main/skills/front-tailwind/SKILL.md"
-    ],
-    "related": ["astro", "tailwind"]
+	"title": "Next.js",
+	"description": "Framework React full-stack: Server Component, Client Component e Route Handler no App Router",
+	"tags": [
+		"front",
+		"design",
+		"nextjs",
+		"ssr",
+		"typescript"
+	],
+	"framework": "https://nextjs.org",
+	"docs": "https://nextjs.org/docs",
+	"mcp": "https://nextjs.org/docs/app/guides/mcp",
+	"github": "https://github.com/thiagoeti",
+	"project": "https://github.com/thiagoeti/front/tree/main/nextjs",
+	"skills": [
+		"https://github.com/thiagoeti/skills",
+		"https://github.com/thiagoeti/skills/blob/main/skills/creative/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-tailwind/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-ui-ux/SKILL.md"
+	],
+	"related": ["design", "ui-ux", "shadcn", "astro", "tailwind"]
 }

@@ -4,11 +4,12 @@ Glifos e ícones em SVG: o glifo ilustra o conceito, o ícone é reconhecido em 
 
 ## Projeto
 
-- [Github](https://github.com/thiagoeti)
-- [front - Glyph Icon](https://github.com/thiagoeti/front/tree/main/glyph-icon)
+- [@thiagoeti](https://github.com/thiagoeti)
+- [Glyph Icon](https://github.com/thiagoeti/front/tree/main/glyph-icon)
 
 ## Skills
 
-- [Skills](https://github.com/thiagoeti/skills)
-- [Glyph](https://github.com/thiagoeti/skills/blob/main/skills/glyph/SKILL.md)
-- [Icon](https://github.com/thiagoeti/skills/blob/main/skills/icon/SKILL.md)
+- [Github](https://github.com/thiagoeti/skills)
+- [Creative](https://github.com/thiagoeti/skills/blob/main/skills/creative/SKILL.md)
+- [Design - Glyph](https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md)
+- [Design - Icon](https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md)

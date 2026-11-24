@@ -17,12 +17,14 @@ claude mcp add --scope local shadcn -- npx shadcn@latest mcp
 
 ## Projeto
 
-- [Github](https://github.com/thiagoeti)
-- [front - shadcn](https://github.com/thiagoeti/front/tree/main/shadcn)
+- [@thiagoeti](https://github.com/thiagoeti)
+- [shadcn](https://github.com/thiagoeti/front/tree/main/shadcn)
 
 ## Skills
 
-- [Skills](https://github.com/thiagoeti/skills)
-- [Tailwind](https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md)
-- [Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
-- [Next.js](https://github.com/thiagoeti/skills/blob/main/skills/nextjs/SKILL.md)
+- [Github](https://github.com/thiagoeti/skills)
+- [Front - Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
+- [Front - Tailwind](https://github.com/thiagoeti/skills/blob/main/skills/front-tailwind/SKILL.md)
+- [Design - Icon](https://github.com/thiagoeti/skills/blob/main/skills/design-icon/SKILL.md)
+- [Design - Glyph](https://github.com/thiagoeti/skills/blob/main/skills/design-glyph/SKILL.md)
+- [Design - UI-UX](https://github.com/thiagoeti/skills/blob/main/skills/design-ui-ux/SKILL.md)

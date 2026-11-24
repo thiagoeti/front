@@ -45,3 +45,14 @@ Sem Docker: `sh run.sh`.
 | `GET /health` | `ok` |
 | `GET /` | `dist/index.html` |
 | `GET /*` | Arquivo de `dist/` ou `public/` |
+
+## Projeto
+
+- [@thiagoeti](https://github.com/thiagoeti)
+- [Public](https://github.com/thiagoeti/front/tree/main/public)
+
+## Skills
+
+- [Front - CDN](https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md)
+- [Front - Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
+- [Front - Next.js](https://github.com/thiagoeti/skills/blob/main/skills/nextjs/SKILL.md)

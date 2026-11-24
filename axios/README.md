@@ -9,10 +9,11 @@ Cliente HTTP para navegador
 
 ## Projeto
 
-- [Github](https://github.com/thiagoeti)
-- [front - axios](https://github.com/thiagoeti/front/tree/main/axios)
+- [@thiagoeti](https://github.com/thiagoeti)
+- [axios](https://github.com/thiagoeti/front/tree/main/axios)
 
 ## Skills
 
-[Skills](https://github.com/thiagoeti/skills)
-[axios](https://github.com/thiagoeti/skills/blob/main/skills/axios/SKILL.md)
+- [Github](https://github.com/thiagoeti/skills)
+- [axios](https://github.com/thiagoeti/skills/blob/main/skills/axios/SKILL.md)
+- [front-cdn](https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md)

@@ -2,13 +2,14 @@
 	"title": "Tailwind",
 	"description": "Framework CSS utility-first",
 	"tags": [
-		"tailwind",
-		"astro",
 		"front",
+		"design",
+		"tailwind",
 		"cdn",
 		"unpkg",
-		"vite",
-		"postcss"
+		"astro",
+		"nextjs",
+		"ui-ux"
 	],
 	"framework": "https://tailwindcss.com",
 	"docs": "https://tailwindcss.com/docs",
@@ -16,7 +17,9 @@
 	"project": "https://github.com/thiagoeti/front/tree/main/tailwind",
 	"skills": [
 		"https://github.com/thiagoeti/skills",
-		"https://github.com/thiagoeti/skills/blob/main/skills/tailwind/SKILL.md"
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-cdn/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/front-tailwind/SKILL.md",
+		"https://github.com/thiagoeti/skills/blob/main/skills/design-ui-ux/SKILL.md"
 	],
 	"related": ["cdn", "astro", "nextjs", "ui-ux"]
 }

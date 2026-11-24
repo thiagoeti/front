@@ -17,12 +17,12 @@ claude mcp add --transport http --scope local astro-docs https://mcp.docs.astro.
 
 ## Projeto
 
-- [Github](https://github.com/thiagoeti)
-- [front - Astro](https://github.com/thiagoeti/front/tree/main/astro)
+- [@thiagoeti](https://github.com/thiagoeti)
+- [Astro](https://github.com/thiagoeti/front/tree/main/astro)
 
 ## Skills
 
-- [Skills](https://github.com/thiagoeti/skills)
+- [Github](https://github.com/thiagoeti/skills)
 - [Astro](https://github.com/thiagoeti/skills/blob/main/skills/astro/SKILL.md)
 - [Astro - Structure](https://github.com/thiagoeti/skills/blob/main/skills/astro-structure/SKILL.md)
 - [Astro - Landing Page](https://github.com/thiagoeti/skills/blob/main/skills/astro-landing-page/SKILL.md)
