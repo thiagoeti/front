@@ -8,7 +8,10 @@
 		"cdn",
 		"unpkg"
 	],
-	"library": "https://axios.rest",
+	"library": [
+		"https://axios.rest",
+		"https://github.com/axios/axios"
+	],
 	"docs": "https://axios.rest/pages/misc/security.html",
 	"github": "https://github.com/thiagoeti",
 	"project": "https://github.com/thiagoeti/front/tree/main/axios",
